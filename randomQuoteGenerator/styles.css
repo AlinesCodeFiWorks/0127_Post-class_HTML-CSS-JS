@@ -4,9 +4,12 @@ body {
   text-align: center;
   margin: 50px;
 }
+/* quote display styling */
+#quote-display {
+}
 
 /* Button styling */
-#counterButton {
+#generate-quote {
   border: none;
   background-color: blue;
   color: white;
@@ -17,7 +20,7 @@ body {
   padding: 15px;
 }
 
-#counterButton:hover {
+#generate-quote:hover {
   background-color: green;
   transition: background-color 0.5s;
 }
