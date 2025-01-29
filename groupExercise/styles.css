@@ -1,0 +1,35 @@
+body {
+  background-color: rgb(107, 162, 209);
+}
+
+#ourButton {
+  background-color: gray;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#button1 {
+  background-color: gray;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#button2 {
+  background-color: gray;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.img {
+  height: 100px;
+  width: 100px;
+}
