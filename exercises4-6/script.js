@@ -12,13 +12,18 @@ myButton.addEventListener("click", displayText);
 
 //Exercise 5
 //Ingredients
-const countDown = setInterval(10);
+const countDown = setInterval(countDownBegins, 1000);
 const countDownTimer = document.querySelector(".countDownTimer");
 const startButton = document.querySelector(".startButton");
 const stopButton = document.querySelector(".stopButton");
+let remainingTime = 10;
 //Recipe
-function startTimer{}
-function stopTimer{countDown.clearInterval();}
-countDownTimer.textContent=countDown;
-startButton.addEventListener('click',startTimer);
-stopButton.addEventListener('click',stopTimer);
+function startTimer() {
+  remainingTime = remainingTime - 1;
+  countDownTimer.textContent = remainingTime;
+}
+function stopTimer() {
+  clearInterval(countDown);
+}
+startButton.addEventListener("click", startTimer);
+stopButton.addEventListener("click", stopTimer);
