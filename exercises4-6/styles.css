@@ -17,6 +17,7 @@ input {
 button {
   cursor: pointer;
   padding: 5px;
+  margin: 5px;
   border-radius: 10px;
   font-size: larger;
 }
@@ -27,5 +28,17 @@ h2 {
 
 p {
   background-color: white;
-  padding: 5px;
+}
+
+.countDownTimer {
+  border: 1.5px;
+  background-color: antiquewhite;
+  font-weight: bold;
+  font-size: larger;
+}
+.startButton {
+  background-color: green;
+}
+.stopButton {
+  background-color: red;
 }
