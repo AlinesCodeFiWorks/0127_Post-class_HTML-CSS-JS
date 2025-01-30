@@ -24,3 +24,8 @@ button {
 h2 {
   font-size: xx-large;
 }
+
+p {
+  background-color: white;
+  padding: 5px;
+}

@@ -1,12 +1,11 @@
 //Exercise 4
 //Ingredients
-const myInput = document.getElementById("myInput");
-const myButton = document.getElementsByClassName("myButton");
-const inputDisplay = document.getElementsByClassName("inputDisplay");
+const myInput = document.querySelector("#myInput");
+const myButton = document.querySelector(".myButton");
+const inputDisplay = document.querySelector(".inputDisplay");
 
 //Recipe
 function displayText() {
-  myButton.addEventListener("click", function () {
-    inputDisplay.innerText = `${myInput.innerText}`;
-  });
+  inputDisplay.textContent = myInput.value;
 }
+myButton.addEventListener("click", displayText);
