@@ -12,18 +12,25 @@ myButton.addEventListener("click", displayText);
 
 //Exercise 5
 //Ingredients
-const countDown = setInterval(countDownBegins, 1000);
 const countDownTimer = document.querySelector(".countDownTimer");
 const startButton = document.querySelector(".startButton");
 const stopButton = document.querySelector(".stopButton");
 let remainingTime = 10;
+let countDown;
 //Recipe
 function startTimer() {
-  remainingTime = remainingTime - 1;
-  countDownTimer.textContent = remainingTime;
+  countDown = setInterval(function () {
+    if (remainingTime > 0) {
+      remainingTime = remainingTime - 1;
+      countDownTimer.textContent = remainingTime;
+    } else {
+      clearInterval(countDown); // Stop at 0
+    }
+  }, 1000);
 }
 function stopTimer() {
   clearInterval(countDown);
 }
 startButton.addEventListener("click", startTimer);
 stopButton.addEventListener("click", stopTimer);
+//Feeling pretty defeated having relied on AI so heavily for this one, but I definitely learned a lot :,)
